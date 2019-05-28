@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ElderCare_UserModule_Example' do
+  pod 'ElderCare_UserModule', :path => '../'
+
+  target 'ElderCare_UserModule_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
