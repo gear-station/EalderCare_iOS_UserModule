@@ -9,18 +9,17 @@
 Pod::Spec.new do |s|
   s.name             = 'ElderCare_UserModule'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ElderCare_UserModule.'
+  s.summary          = 'ElderCare_UserModule in ElderCare project'
   s.swift_version    = '5.0'
 
   s.description      = <<-DESC
   This is UserModule of ElderCare project. Here is ther users of ElderCare system who will be managers.
                        DESC
 
-  s.homepage         = 'https://github.com/skykywind/ElderCare_UserModule'
+  s.homepage         = 'https://github.com/gear-station/EalderCare_iOS_UserModule'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'skykywind' => 'jiafujia123@gmail.com' }
-  s.source           = { :git => 'https://github.com/skykywind/ElderCare_UserModule.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/gear-station/EalderCare_iOS_UserModule.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
 
