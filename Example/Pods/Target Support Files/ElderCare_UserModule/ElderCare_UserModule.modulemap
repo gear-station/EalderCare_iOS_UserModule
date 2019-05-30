@@ -1,0 +1,6 @@
+framework module ElderCare_UserModule {
+  umbrella header "ElderCare_UserModule-umbrella.h"
+
+  export *
+  module * { export * }
+}
