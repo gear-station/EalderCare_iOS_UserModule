@@ -1,9 +1,10 @@
 {
   "name": "ElderCare_UserModule",
   "version": "0.1.0",
-  "summary": "A short description of ElderCare_UserModule.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/skykywind/ElderCare_UserModule",
+  "summary": "ElderCare_UserModule in ElderCare project",
+  "swift_versions": "5.0",
+  "description": "This is UserModule of ElderCare project. Here is ther users of ElderCare system who will be managers.",
+  "homepage": "https://github.com/gear-station/EalderCare_iOS_UserModule",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +13,20 @@
     "skykywind": "jiafujia123@gmail.com"
   },
   "source": {
-    "git": "https://github.com/skykywind/ElderCare_UserModule.git",
+    "git": "https://github.com/gear-station/EalderCare_iOS_UserModule.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.3"
   },
-  "source_files": "ElderCare_UserModule/Classes/**/*"
+  "source_files": "ElderCare_UserModule/Classes/**/*",
+  "dependencies": {
+    "JFJExtension": [
+
+    ],
+    "SegMenu": [
+
+    ]
+  },
+  "swift_version": "5.0"
 }

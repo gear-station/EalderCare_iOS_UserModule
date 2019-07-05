@@ -6,9 +6,14 @@
 //
 
 import UIKit
+import SegMenu
 
 class ECUserViewController: UIViewController {
 
+    var menu: SegMenu!
+    var titleLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,6 +22,10 @@ class ECUserViewController: UIViewController {
     
     private func setUI() {
         view.backgroundColor = UIColor.cyan
+    }
+    
+    private func setupSubControllers() {
+        
     }
     
 }

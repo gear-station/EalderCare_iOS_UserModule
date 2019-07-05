@@ -1,27 +1,31 @@
 PODS:
-  - ElderCare_UserModule (0.1.0)
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
+  - ElderCare_UserModule (0.1.0):
+    - JFJExtension
+    - SegMenu
+  - JFJExtension (1.0.4):
+    - SnapKit
+  - SegMenu (0.1.0)
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - ElderCare_UserModule (from `../`)
-  - FBSnapshotTestCase (~> 2.1.4)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - FBSnapshotTestCase
+    - JFJExtension
+    - SegMenu
+    - SnapKit
 
 EXTERNAL SOURCES:
   ElderCare_UserModule:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ElderCare_UserModule: 341ce29a8daf726f8e86d135d092e323c2d888fb
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  ElderCare_UserModule: 85be12a36516ddbc54093d272773ca74b45cf74a
+  JFJExtension: 6722646488052d8a73a8bd4109a5f09055b4c1ad
+  SegMenu: b73ea7ad67bfdd9b96f8bc00d2d7a20d4ef01477
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 0c1cae5d750ffcbc4f7b1db2589e19cb5fbf718e
+PODFILE CHECKSUM: 01e62552b337037a093399e214471782f974e221
 
-COCOAPODS: 1.7.0.beta.2
+COCOAPODS: 1.7.2

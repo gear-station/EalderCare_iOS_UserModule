@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.author           = { 'skykywind' => 'jiafujia123@gmail.com' }
   s.source           = { :git => 'https://github.com/gear-station/EalderCare_iOS_UserModule.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.3'
 
   s.source_files = 'ElderCare_UserModule/Classes/**/*'
   
@@ -32,5 +32,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'JFJExtension'
-  # s.dependency ''
+  s.dependency 'SegMenu'
 end
