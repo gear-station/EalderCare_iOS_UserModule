@@ -4,7 +4,7 @@ PODS:
     - SegMenu
   - JFJExtension (1.0.4):
     - SnapKit
-  - SegMenu (0.1.0)
+  - SegMenu (0.1.1)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
@@ -23,7 +23,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   ElderCare_UserModule: 85be12a36516ddbc54093d272773ca74b45cf74a
   JFJExtension: 6722646488052d8a73a8bd4109a5f09055b4c1ad
-  SegMenu: b73ea7ad67bfdd9b96f8bc00d2d7a20d4ef01477
+  SegMenu: 66cfccda0936f5abfcd3917d69c52c1838d58a34
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: 01e62552b337037a093399e214471782f974e221

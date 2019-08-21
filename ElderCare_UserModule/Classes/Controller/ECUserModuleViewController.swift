@@ -28,18 +28,38 @@ class ECUserModuleViewController: UIViewController {
     }
     
     private func setupUI() {
+        for (idx, vc) in controllers.enumated {
+            vc.title = titles[idx]
+        }
         addChild(menu)
         view.addSubview(menu.view)
     }
 
     lazy var menu: SegMenu = {
-        let menu = SegMenu(viewControllers: controllers, frame: CGRect(x: 0, y: UIScreen.naviBarHeight, width: UIScreen.screenWidth, height: UIScreen.screenHeight - UIScreen.naviBarHeight - UIScreen.tabBarHeight), configuration: menuConfigruation)
+        let menuFrame = CGRect(x: 0,
+                           y: UIScreen.naviBarHeight,
+                           width: UIScreen.screenWidth,
+                           height: UIScreen.screenHeight - UIScreen.naviBarHeight - UIScreen.tabBarHeight)
         
-        return SegMenu(viewControllers: controllers, frame: <#T##CGRect#>, pageMenuOptions: <#T##[SegMenuOption]?#>)
+        return SegMenu(viewControllers: controllers,
+                       frame: menuFrame,
+                       pageMenuOptions: options)
     }()
     
     lazy var options: [SegMenuOption] = {
-        return [.useMenuAsSegmentedControl(true)
+        return [.scrollMenuBackgroundColor(UIColor.white),
+                .viewBackgroundColor(.white),
+                .bottomMenuHairlineColor(UIColor(red: 20.0/255.0, green: 20.0/255.0, blue: 20.0/255.0, alpha: 0.1)),
+                .indicatorColor(UIColor(red: 18.0/255.0, green: 150.0/255.0, blue: 225.0/255.0, alpha: 1.0)),
+                .menuHeight(50.0),
+                .selectedMenuItemTextColor(UIColor(red: 18.0/255.0, green: 150.0/255.0, blue: 225.0/255.0, alpha: 1.0)),
+                .unselectedMenuItemTextColor(UIColor(red: 40.0/255.0, green: 40.0/255.0, blue: 40.0/255.0, alpha: 1.0)),
+                .menuItemFont(UIFont(name: "Noteworthy-Light", size: 15.0)!),
+                .useMenuAsSegmentedControl(true),
+                .menuItemSeparatorRoundEdges(true),
+                .indicatorHeight(2.0),
+                .menuItemSeparatorWidth(5),
+                .menuItemSeparatorPercentageHeight(0.1)
                 ]
     }()
 }

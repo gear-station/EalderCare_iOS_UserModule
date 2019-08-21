@@ -17,12 +17,12 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "9.3"
+    "ios": "10.0"
   },
   "source_files": "ElderCare_UserModule/Classes/**/*",
   "dependencies": {
     "JFJExtension": [
-
+      "~> 1.0.6"
     ],
     "SegMenu": [
 

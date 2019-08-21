@@ -24,8 +24,4 @@ class ECUserViewController: UIViewController {
         view.backgroundColor = UIColor.cyan
     }
     
-    private func setupSubControllers() {
-        
-    }
-    
 }
