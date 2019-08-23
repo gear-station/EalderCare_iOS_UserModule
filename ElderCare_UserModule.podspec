@@ -27,4 +27,5 @@ Pod::Spec.new do |s|
   
   s.dependency 'JFJExtension', '~> 1.0.6'
   s.dependency 'SegMenu'
+  s.dependency 'Kingfisher'
 end
