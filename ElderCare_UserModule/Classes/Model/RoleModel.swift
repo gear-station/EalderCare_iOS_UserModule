@@ -11,6 +11,4 @@ class RoleModel: Codable {
     var id: String = ""
     var name: String = ""
     var authortities: [AuthorityModel]?
-    
-    
 }

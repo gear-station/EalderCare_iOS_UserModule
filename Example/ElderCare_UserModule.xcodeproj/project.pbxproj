@@ -12,7 +12,6 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		DB7BDBE2230E5F660031CB27 /* ElderCare_UserModule.framework in Sources */ = {isa = PBXBuildFile; fileRef = DB7BDBE0230E5E560031CB27 /* ElderCare_UserModule.framework */; };
 		EC85FB82DBDE43C23004B151 /* Pods_ElderCare_UserModule_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03829C75BFD49DBDE015902F /* Pods_ElderCare_UserModule_Tests.framework */; };
 		FA17F00BF4419A23315E8D37 /* Pods_ElderCare_UserModule_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213938FD27491A7DB2AAAAE1 /* Pods_ElderCare_UserModule_Example.framework */; };
 /* End PBXBuildFile section */
@@ -320,6 +319,7 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SegMenu/SegMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TagListView/TagListView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -328,6 +328,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SegMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TagListView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -341,7 +342,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB7BDBE2230E5F660031CB27 /* ElderCare_UserModule.framework in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,10 +530,6 @@
 			baseConfigurationReference = 116618746F6C54C7D56A3C39 /* Pods-ElderCare_UserModule_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = PT766GK6EA;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -553,10 +549,7 @@
 			baseConfigurationReference = 4832E31C3DA462A03CCE91E7 /* Pods-ElderCare_UserModule_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = PT766GK6EA;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";

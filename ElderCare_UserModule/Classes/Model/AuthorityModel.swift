@@ -9,5 +9,7 @@ import Foundation
 
 class AuthorityModel: Codable {
     
-    
+    var id: String?
+    var name: String = ""
+    var desc: String = ""
 }

@@ -3,11 +3,13 @@ PODS:
     - JFJExtension (~> 1.0.6)
     - Kingfisher
     - SegMenu
+    - TagListView
   - JFJExtension (1.0.6):
     - SnapKit
   - Kingfisher (5.7.1)
   - SegMenu (0.1.1)
   - SnapKit (5.0.1)
+  - TagListView (1.4.0)
 
 DEPENDENCIES:
   - ElderCare_UserModule (from `../`)
@@ -18,17 +20,19 @@ SPEC REPOS:
     - Kingfisher
     - SegMenu
     - SnapKit
+    - TagListView
 
 EXTERNAL SOURCES:
   ElderCare_UserModule:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ElderCare_UserModule: 6599c4dcd6521bcaef08b315ee40d7d648329715
+  ElderCare_UserModule: c7631423c100d1ee7ab16418fcad79d014e9ca80
   JFJExtension: c598f05d76aef7f73de914ec67ae66ea1d790f6a
   Kingfisher: 176d377ad339113c99ad4980cbae687f807e20fe
   SegMenu: 66cfccda0936f5abfcd3917d69c52c1838d58a34
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
 
 PODFILE CHECKSUM: 3923d07ffcdbcbadffe56f55716d74beceacbe4f
 
